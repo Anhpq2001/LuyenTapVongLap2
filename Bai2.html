@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai thua cua mot so nguyen duong</title>
+</head>
+<body>
+<label>Nhập số nguyên dương:</label>
+<input type="number" id="number">
+<br>
+<input type="submit" onclick="tinhGiaiThua()">
+
+</body>
+<script>
+    function tinhGiaiThua() {
+        var number = document.getElementById("number").value;
+        var result = 1;
+        for (let i = number; i > 0; i--) {
+            result *= i;
+
+        }
+        console.log(result);
+    }
+
+</script>
+</html>

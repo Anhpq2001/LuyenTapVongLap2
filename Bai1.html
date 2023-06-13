@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonaci</title>
+</head>
+<body>
+<label>Nhập một số:</label>
+<input type="number" id="value">
+<input type="submit" onclick="fibonaci()">
+</body>
+<script>
+  function fibonaci(){
+    var number = document.getElementById("value").value;
+    var a1 = 1, a2 = 1;
+    if(number==1||number==2) return 1;
+    var i=3,a;
+    while(i<=number){
+      a=a1+a2;
+      a1=a2;
+      a2=a;
+      i++;
+      console.log(a);
+    }
+  }
+</script>
+</html>

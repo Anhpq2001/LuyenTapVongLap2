@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ hình chữ nhật</title>
+</head>
+<body>
+<label>Nhập chiều dài hình chữ nhật:</label>
+<input type="number" id="chieuDai"><br>
+<label>Nhâp chiều rộng hình chữ nhật:</label>
+<input type="number" id="chieuRong"><br>
+<input type="submit" onclick="veHinhChuNhat()">
+</body>
+<script>
+    function veHinhChuNhat() {
+        var dai = document.getElementById("chieuDai").value;
+        var rong = document.getElementById("chieuRong").value;
+        for (let i = 1; i <= rong; i++) {
+            for (let j = 1; j <= dai; j++) {
+                if (i == 1 || j == 1 || i == rong || j == dai) {
+                    document.write("*");
+                }else{
+
+                    document.write("&nbsp&nbsp");
+                }
+            }
+            document.write("<br>");
+        }
+
+    }
+</script>
+</html>
